@@ -1,0 +1,30 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-default">
+<header class="bk-header wrapper clearfix">
+    {{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+    <div class="companyheader">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+    </div>
+    <div class="header-info">
+        {{widget('clicktocall', 'headerclicktocall', {phoneText: '212 6574 6736'})|raw}}
+        {{widget('profile', 'email', { 'profileType':'email'})|raw}}
+    </div>
+</header>
+<div class="home-feature">
+{{widget('image', 'image', { 'src': asset('images/feature-img.jpg'), 'title': 'Lorem Ipsum Dolor Sit Amet Vivamus Nederles', 'description': 'Vivamus rhoncus ipsum tellus', 'alt': '', 'fileName': 'feature-img.jpg', 'fileSize': '58kb', 'imageSize': '940 x 648', 'imageWidth': '100%'})|raw}}
+</div>
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div> <!--end main -->
+
+<footer class="bk-footer wrapper clearfix">
+    {{widget('socialicons', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+</footer>
+
+</div>
+
+{% endblock %}
