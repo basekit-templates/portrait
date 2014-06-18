@@ -5,7 +5,9 @@
 
 <div class="bk-pt-home">
 <header class="bk-header wrapper clearfix">
-    {{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+{% if pages|length > 1 %}
+{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+{% endif %}
     <div class="companyheader">
         {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
         {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
@@ -16,7 +18,7 @@
     </div>
 </header>
 <div class="home-feature">
-{{widget('image', 'image', { 'src': asset('images/feature-img.jpg'), 'title': 'Lorem Ipsum Dolor Sit Amet Vivamus Nederles', 'description': 'Vivamus rhoncus ipsum tellus', 'alt': '', 'fileName': 'feature-img.jpg', 'fileSize': '58kb', 'imageSize': '940 x 648', 'imageWidth': '100%'})|raw}}
+{{widget('image', 'image', { 'src': asset('images/feature-img.jpg'), 'title': '', 'description': '', 'alt': '', 'fileName': 'feature-img.jpg', 'fileSize': '58kb', 'imageSize': '940 x 648', 'imageWidth': '100%'})|raw}}
 </div>
 <div class="main wrapper clearfix">
     {{zone('main')|raw}}
