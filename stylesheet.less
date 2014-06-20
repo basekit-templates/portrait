@@ -248,6 +248,10 @@
     }
 }
 
+.main .widget.image { 
+    margin-bottom: 2em;
+}
+
 /* ===============================
    BLOCK QUOTE
   =============================== */
@@ -616,10 +620,13 @@ hr {
    IMAGE GALLERY
    =============================== */
 
-.widget.gallery ul li {
-    @media @mobile {
-        width: 100%;
-        padding-bottom: 100%;
+.widget.gallery {
+    margin-bottom: 20px;
+    ul li {
+        @media @mobile {
+            width: 100%;
+            padding-bottom: 100%;
+        }
     }
 }
 
