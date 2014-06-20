@@ -83,20 +83,58 @@
     }
 }
 
-.bk-header .widget.clicktocall a {
+.header-info .widget.clicktocall a {
     color: @font-swatch6-color;
 }
 
-.bk-header .widget.profile .bk-profile-email a {
+.header-info .widget.profile .bk-profile-email a {
     color: @font-swatch6-color;
     @media @mobile {
         padding: 10px 0;
     }
 }
 
+.header-info .widget.profile .bk-profile-address p {
+    display: inline-block;
+    padding-right: 5px;
+    color: @font-swatch6-color;
+}
+
+.header-info .widget.profile span, .bk-header .widget.profile .twitter .twitter-content p {
+     color: @font-swatch6-color;
+}
+
+.header-info .widget.profile {
+    margin: 2% 0 0;
+}
+
+
+.header-info .widget.profile form fieldset input {
+    border: 1px solid darken(@color-swatch7,7%);
+    margin-bottom: 10px;
+    background-color: lighten(@color-swatch7,6%);
+    width: 40%;
+    text-align: center;
+}
+
+.header-info .widget.profile form button {
+    background-color: darken(@color-swatch7,7%);
+    border: 1px solid darken(@color-swatch7,9%);
+    margin: 0 auto;
+    display: block;
+    &:hover {
+        background-color: darken(@color-swatch7,10%);
+    }
+}
+
 /* ===============================
    EXTENDED NAVIGATION
    =============================== */
+
+.widget.extendednavigation .bk-overlay {
+    width: inherit !important;
+    left: 0 !important;
+}
 
 .widget {
     &.extendednavigation {
