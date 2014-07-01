@@ -300,9 +300,6 @@
     text-indent: 0;
 }
 
-.contactform label {
-    display: none;
-}
 
 .contactform textarea {
     border: 1px solid darken(@color-swatch1,7%);
@@ -314,11 +311,12 @@
 }
 
 .blogsearch {
+    text-align: center;
     form {
         label {
-            display: block;
             @media @mobile {
-                margin-bottom: 10px;
+                margin-bottom: 20px;
+                display: block;
             }
         }
         input {
