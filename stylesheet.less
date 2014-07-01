@@ -85,6 +85,28 @@
 
 .header-info .widget.clicktocall a {
     color: @font-swatch6-color;
+    @media @mobile {
+        background-image: image('/images/icon-phone-grey.png');
+        color: @font-swatch6-color;
+        background-color: @color-swatch7;
+    }
+    &:hover {
+        @media @tablet {
+            cursor: text;
+        }
+        @media @mobile {
+            background-color: darken(@color-swatch7,5%);
+            cursor: pointer;
+        }
+    }
+}
+
+.svg .header-info .widget.clicktocall a {
+    @media @mobile {
+        background-image: image('/images/icon-phone-grey.svg');
+        background-size: @font-swatch7-font-size;
+        padding: 15px 10px 15px 30px;
+    }
 }
 
 .header-info .widget.profile .bk-profile-email a {
@@ -340,7 +362,7 @@ button.btn,
     font-weight: @font-swatch7-font-weight;
     line-height: @font-swatch7-line-height;
     background-color: @font-swatch7-background-color;
-    border: 1px solid darken(@font-swatch7-background-color,3%);
+    border: none;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
@@ -382,7 +404,6 @@ button.btn,
     }
     a {
         @media @mobile {
-            background-image: image('/images/icon-phone.png');
             font-family: @font-swatch7-font-family;
             color: @font-swatch7-color;
             font-size: @font-swatch7-font-size;
@@ -396,7 +417,6 @@ button.btn,
             -o-border-radius: 50px;
             border-radius: 50px;
             margin: 5px 0;
-            padding: 15px 10px 15px 30px;
             &:hover {
                 background-color: @font-swatch7-background-color-hover;
             }
@@ -429,27 +449,7 @@ button.btn,
 
 /* SVG Icons */
 
-.svg .widget.paypalbuynow .widget.button.paypal {
-    background-image: image('/images/socialicons-paypal.svg')
-}
-.svg .widget.tweet a {
-    background-image: image('/images/socialicons-twitter.svg')
-}
-.svg .widget.dropbox button {
-    background-image: image('/images/socialicons-dropbox.svg')
-}
-.svg .widget.clicktocall a {
-    @media @mobile {
-        background-image: image('/images/icon-phone.svg');
-        background-size: @font-swatch7-font-size;
-        padding: 15px 10px 15px 30px;
-    }
-}
 .svg {
-    .widget.ecombasket .ecombasket-pull p:before,
-    .widget.ecomproduct .ecom-product .btn.ecom-product-add-to-cart-btn .text:before {
-        background-image: image('/images/icon-basket.svg');
-    }
     .widget.ecomproduct .ecom-product .btn.ecom-product-add-to-cart-btn.added .text:before {
         background-image: none;
     }
@@ -458,20 +458,8 @@ button.btn,
     
 /* PNG Icons */
 
-.widget.paypalbuynow .widget.button.paypal {
-    background-image: image('/images/socialicons-paypal.png')
-}
-.widget.tweet a {
-    background-image: image('/images/socialicons-twitter.png')
-}
-.widget.dropbox button {
-    background-image: image('/images/socialicons-dropbox.png');
-    margin: 5px 0;
-}
-
 .widget.ecombasket .ecombasket-pull p:before,
 .widget.ecomproduct .ecom-product .btn.ecom-product-add-to-cart-btn .text:before {
-    background-image: image('/images/icon-basket.png');
     height: 15px;
     width: 19px;
     margin: 0 14px 0 0;
@@ -487,6 +475,23 @@ button.btn,
         width: 100%;
         display: block;
         text-align: center;
+    }
+}
+
+
+/* ===============================
+   TWITTER
+   =============================== */
+
+.widget.twitter .bk-full-name {
+    color: @color-swatch3;
+}
+
+.widget.twitter ul li span a {
+    color: @color-swatch3;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
     }
 }
 
