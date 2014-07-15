@@ -36,8 +36,22 @@
 
 
 /* ===============================
-   HEADER
+   HEADER & FOOTER
    =============================== */
+
+.bk-footer {
+    text-align: center;
+}
+
+.bk-footer {
+    background-color: @color-swatch7;
+    margin-bottom: 2em;
+    padding: 2% 5%;
+    .widget socialicons {
+        margin: 0;
+
+    }
+}
 
 .companyheader {
     margin: 4em 0;
@@ -93,7 +107,7 @@
     }
 }
 
-.svg .header-info .widget.clicktocall a {
+.svg .header-info .widget.clicktocall a, .svg .bk-footer .widget.clicktocall a  {
     @media @mobile {
         background-image: image('/images/icon-phone-grey.svg');
         background-size: @font-swatch7-font-size;
@@ -101,31 +115,31 @@
     }
 }
 
-.header-info .widget.profile .bk-profile-email a {
+.header-info .widget.profile .bk-profile-email a, .bk-footer .widget.profile .bk-profile-email a {
     color: @font-swatch6-color;
     @media @mobile {
         padding: 10px 0;
     }
 }
 
-.header-info .widget.profile .bk-profile-address p {
+.header-info .widget.profile .bk-profile-address p, .bk-footer .widget.profile .bk-profile-address p {
     display: inline-block;
     padding-right: 5px;
     color: @font-swatch6-color;
 }
 
-.header-info .widget.profile span, .bk-header .widget.profile .twitter .twitter-content p {
+.header-info .widget.profile span, .bk-header .widget.profile .twitter .twitter-content p, .bk-footer .widget.profile span, .bk-footer .widget.profile .twitter .twitter-content p {
      color: @font-swatch6-color;
 }
 
-.header-info .widget.profile {
+.header-info .widget.profile, .bk-footer .widget.profile  {
     .twitter, .map, form {
          margin: 2% 0 0;
     }
 }
 
 
-.header-info .widget.profile form fieldset input {
+.header-info .widget.profile form fieldset input, .bk-footer .widget.profile form fieldset input {
     border: 1px solid darken(@color-swatch7,7%);
     margin-bottom: 10px;
     background-color: lighten(@color-swatch7,6%);
@@ -133,7 +147,7 @@
     text-align: center;
 }
 
-.header-info .widget.profile form button {
+.header-info .widget.profile form button, .bk-footer .widget.profile form button {
     background-color: darken(@color-swatch7,7%);
     border: 1px solid darken(@color-swatch7,9%);
     margin: 0 auto;
@@ -1228,20 +1242,3 @@ span.ecom-product-category {
 
 
 
-/* ===============================
-  FOOTER 
-   =============================== */
-
-.bk-footer {
-    text-align: center;
-}
-
-.bk-footer {
-    background-color: @color-swatch7;
-    margin-bottom: 2em;
-    padding: 2% 5%;
-    .widget socialicons {
-        margin: 0;
-        
-    }
-}
