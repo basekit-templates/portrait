@@ -131,24 +131,17 @@
     }
 }
 
-
 .header-info .widget.profile form fieldset input, .bk-footer .widget.profile form fieldset input {
     border: 1px solid darken(@color-swatch7,7%);
     margin-bottom: 10px;
     background-color: lighten(@color-swatch7,6%);
     width: 40%;
     text-align: center;
+    @media @tablet {
+        width: 100%;
+    }
 }
 
-.header-info, .bk-footer {
-    .widget.profile form fielset {
-        input {
-            @media @tablet {
-                width: 100%;
-            }
-        }
-    }   
-}
 
 /* ===============================
    EXTENDED NAVIGATION
