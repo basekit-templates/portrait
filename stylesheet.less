@@ -66,25 +66,12 @@
     }
 }
 
-.bk-footer {
+.header-info {
     background-color: @color-swatch7;
-    margin-bottom: 2em;
-    .widget.socialicons {
-        padding: 1em 0 0;
-    }
-}
-
-.header-info { 
+    padding: 2% 5%;
     clear: both;
-    .widget.clicktocall {
-        background-color: @color-swatch7;
-        padding: 2% 5% 0;
-        margin: 0;
-    }
-    .widget.profile {
-        background-color: @color-swatch7;
-        padding: 0 5% 2%;
-        margin: 0;
+    @media @mobile {
+         padding: 2% 5% 5%;
     }
 }
 
@@ -1247,4 +1234,14 @@ span.ecom-product-category {
 
 .bk-footer {
     text-align: center;
+}
+
+.bk-footer {
+    background-color: @color-swatch7;
+    margin-bottom: 2em;
+    padding: 2% 5%;
+    .widget socialicons {
+        margin: 0;
+        
+    }
 }
