@@ -140,14 +140,14 @@
     text-align: center;
 }
 
-.header-info .widget.profile form button, .bk-footer .widget.profile form button {
-    background-color: darken(@color-swatch7,7%);
-    border: 1px solid darken(@color-swatch7,9%);
-    margin: 0 auto;
-    display: block;
-    &:hover {
-        background-color: darken(@color-swatch7,10%);
-    }
+.header-info, .bk-footer {
+    .widget.profile form fielset {
+        input {
+            @media @tablet {
+                width: 100%;
+            }
+        }
+    }   
 }
 
 /* ===============================
