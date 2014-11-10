@@ -195,6 +195,8 @@
             li:hover ul {
                 margin: 0;
                 background-color: darken(@color-swatch7,3%);
+                border: 1px solid darken(@color-swatch7,15%);
+                padding: 0 10px;
                 li {
                     padding: 0;
                     a {
@@ -205,6 +207,7 @@
                     }
                     &:first-child {
                         padding-top: 10px;
+                        border-top: 0;
                         @media @tablet {
                             padding-top: 0;
                         }
@@ -235,9 +238,11 @@
     }
 }
 
-div.widget.extendednavigation ul.align-left {
+div.widget.extendednavigation ul.align-left, div.widget.extendednavigation ul.align-right {
     li.folder .text {
-        padding: 5px 9px 5px 0;
+        @media @tablet {
+            padding: 5px 9px 5px 0;
+        }
     }
 }
 
