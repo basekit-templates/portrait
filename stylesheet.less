@@ -98,6 +98,19 @@
     }
 }
 
+ .widget.profile .bk-profile-address p {
+    display: inline-block;
+    padding-bottom: 0;
+    &:after {
+        content: "\002C";
+        margin-left: -4px;
+    }
+    &:last-child:after {
+        content: '';
+        margin-left: 0;
+    }
+}
+
 .svg .header-info .widget.clicktocall a, .svg .bk-footer .widget.clicktocall a  {
     @media @mobile {
         background-image: image('/images/icon-phone-grey.svg');
