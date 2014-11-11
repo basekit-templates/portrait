@@ -1,5 +1,9 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
+pre {
+    white-space: pre-wrap;
+}
+
 .wrapper {
     width: 90%;
     margin: 0 5%;
@@ -19,7 +23,7 @@
         padding: 3em;
     }
     @media @mobile {
-        padding: 2em;
+        padding: 1.5em;
     }
 }
 
@@ -101,14 +105,6 @@
  .widget.profile .bk-profile-address p {
     display: inline-block;
     padding-bottom: 0;
-    &:after {
-        content: "\002C";
-        margin-left: -4px;
-    }
-    &:last-child:after {
-        content: '';
-        margin-left: 0;
-    }
 }
 
 .svg .header-info .widget.clicktocall a, .svg .bk-footer .widget.clicktocall a  {
@@ -770,6 +766,18 @@ hr {
                 display: inline-block;
                 padding: 0 15px 10px 0;
                 margin: 0;
+                &:after {
+                    color: #a5a5a5;
+                    content: "\2662";
+                    display: inline-block;
+                    font-size: 10px;
+                    margin-left: 20px;
+                    position: relative;
+                    vertical-align: top;
+                }
+                &:last-child:after {
+                    display: none;
+                }
                 &:last-child {
                     padding-right: 0;
                     @media only screen and (max-width: 550px) {
@@ -939,6 +947,10 @@ hr {
     p.blog-post-more-link {
         padding: 2.3em 0 1.5em;
     }
+    .blog-post-category-label:after, .blog-post-tags-label:after {
+        content: ":";
+        position: relative;
+    }
 }
 
 /* ===============================
@@ -1080,6 +1092,9 @@ footer.blog-post-metadata time {
                 display: inline-block;
                 @media @mobile {
                     width: 100%;
+                }
+                label {
+                    display: block;
                 }
                 &.productlist-search {
                     input {
