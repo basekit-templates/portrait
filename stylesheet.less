@@ -4,6 +4,12 @@ pre {
     white-space: pre-wrap;
 }
 
+.bk-content-text {
+    .more, .less {
+        color: @color-swatch3;
+    }
+}
+
 .wrapper {
     width: 90%;
     margin: 0 5%;
@@ -645,10 +651,11 @@ hr {
             border-radius: 4px;
             left: 45%;
             top: 43%;
+            height: 60px;
+            width: 60px;
             &:after {
                 color: #fff;
                 letter-spacing: -4px;
-                top: 2px;
             }
             @media @mobile {
                 width: 40px;
@@ -1377,5 +1384,20 @@ span.ecom-product-category {
     padding-left: 0;
 }
 
+/* ===============================
+  Linkedin Widget
+   =============================== */
 
-
+.widget.linkedin {
+    @media @mobile {
+        iframe, .li-profile-container, .member-info {
+            width: 100%!important;
+        }
+        .member-photo {
+            display: noneimportant;
+        }
+        .container-outer {
+            width: 94%important;
+        }
+    }
+}
