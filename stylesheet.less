@@ -1390,14 +1390,12 @@ span.ecom-product-category {
 
 .widget.linkedinprofile {
     @media @mobile {
-        iframe, .li-profile-container, .member-info {
-            width: 100%!important;
-        }
-        .member-photo {
-            display: noneimportant;
-        }
-        .container-outer {
-            width: 94%important;
+        iframe {
+            -ms-transform: scale(0.78);
+            -moz-transform: scale(0.70);
+            -webkit-transform: scale(0.78);
+            transform: scale(0.78);
+            transform-origin: top left;
         }
     }
 }
