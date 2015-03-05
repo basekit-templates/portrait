@@ -8,7 +8,8 @@
     "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
     "br": ["limpo", "menu", "cafeteria", "bar", "restaurante"]
     },
-    "images":["images/feature-img.jpg"],
+    "pageTypes":["home"],
+    "images":["images/feature-img.jpg", "images/logo.png"],
     "colorSwatches":
     {
         "Swatch 1": {
