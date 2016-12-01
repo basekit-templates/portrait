@@ -345,11 +345,17 @@ blockquote {
     FORMS
     =============================== */
 
-.contactform label {
+.contactform label,
+.advancedcontactform .form-group>label,
+.advancedcontactform .option-list .option-item .label {
     margin-bottom: 10px;
 }
 
-.contactform input, .widget.signupform form fieldset input, .widget.profile form fieldset input {
+.contactform input,
+.widget.signupform form fieldset input,
+.widget.profile form fieldset input,
+.advancedcontactform form input[type=email], 
+.advancedcontactform form input[type=text] {
     border-bottom: 1px solid darken(@color-swatch1,7%);
     border-top: 0;
     border-left: 0;
@@ -360,13 +366,22 @@ blockquote {
     text-indent: 0;
 }
 
-.contactform textarea {
+.advancedcontactform form select {
+    background-color: @color-swatch2;
+}
+
+.contactform textarea,
+.advancedcontactform fieldset textarea {
     border: 1px solid darken(@color-swatch1,7%);
     background-color: transparent;
     margin-bottom: 5px;
     padding-right: 0;
     width: 100%;
     height: 42px;
+}
+
+.advancedcontactform .option-list {
+    padding: 1em 0;
 }
 
 .blogsearch {
@@ -405,7 +420,8 @@ blockquote {
 button.btn, 
 .widget.profile form button, 
 .signupform fieldset button, 
-.contactform button.btn, 
+.contactform button.btn,
+.advancedcontactform fieldset button,
 .btn, 
 .blogsearch form button, 
 .checkout-order-button, 
